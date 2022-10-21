@@ -3,7 +3,31 @@
         "id": 1,
         "subject": "Issue with ssl certificate",
         "status": "Client response pending",
-        "addedAt": "10-10-2022"
+        "addedAt": "10-10-2022",
+        "history": [
+            {   
+                "date": "20-10-2020",
+                "message": "safdsag",
+                "messageBy": "Client"
+            },
+            {   
+                "date": "20-10-2020",
+                "message": "safdsag",
+                "messageBy": "Operator"
+            },
+            {   
+                "date": "20-10-2020",
+                "message": "safdsag",
+                "messageBy": "Client"
+            },
+            {   
+                "date": "20-10-2020",
+                "message": "safdsag",
+                "messageBy": "Operator"
+            }
+            
+
+        ]
     },
     {
         "id": 2,
