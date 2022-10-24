@@ -1,14 +1,14 @@
 import React from "react";
-import {Container, Row, Col, Form, Button} from 'react-bootstrap';
+import { Container, Row, Col, Form, Button } from 'react-bootstrap';
 import { PropTypes } from "prop-types";
 
 
-export const LoginForm = ({handleOnchange,handleOnSubmit,formSwitcher, email, pass}) => {
+export const LoginForm = ({ handleOnchange, handleOnSubmit, formSwitcher, email, pass }) => {
     return (
         <div>
             <Container>
                 <Row>
-                    <Col>   
+                    <Col>
                         <h1 className="text-info text-center">Client Login</h1>
                         <hr />
                         <Form autoComplete="off" onSubmit={handleOnSubmit}>
@@ -17,11 +17,11 @@ export const LoginForm = ({handleOnchange,handleOnSubmit,formSwitcher, email, pa
                                     Email Addres
                                 </Form.Label>
                                 <Form.Control type="email"
-                                name="email" 
-                                value={email}
-                                onChange={handleOnchange}
-                                placeholder="Enter Email" 
-                                required
+                                    name="email"
+                                    value={email}
+                                    onChange={handleOnchange}
+                                    placeholder="Enter Email"
+                                    required
                                 />
                             </Form.Group>
 
@@ -30,12 +30,12 @@ export const LoginForm = ({handleOnchange,handleOnSubmit,formSwitcher, email, pa
                                     Password
                                 </Form.Label>
                                 <Form.Control type="password"
-                                 name="password"
-                                 value={pass}
-                                 onChange={handleOnchange}
-                                 placeholder="Enter password"
-                                 required 
-                                 />
+                                    name="password"
+                                    value={pass}
+                                    onChange={handleOnchange}
+                                    placeholder="Enter password"
+                                    required
+                                />
                             </Form.Group>
 
                             <Button type="submit">Login</Button>
@@ -51,7 +51,13 @@ export const LoginForm = ({handleOnchange,handleOnSubmit,formSwitcher, email, pa
                         <a href="hgy" onClick={() => formSwitcher('reset')}>Forget Password?</a>
                     </Col>
                 </Row>
-                
+                <Row className='py-4'>
+                    <Col>
+                        Are you new here?
+                        <a href="/registration" >Registration Now</a>
+                    </Col>
+                </Row>
+
             </Container>
         </div>
     )
@@ -64,5 +70,5 @@ LoginForm.propTypes = {
     email: PropTypes.string.isRequired,
     pass: PropTypes.string.isRequired,
 
-    
+
 }
